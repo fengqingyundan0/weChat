@@ -1,0 +1,14 @@
+<!--pages/goodsList/goodsList.wxml-->
+<import src='../../template/goodsDisplay2/goodsDisplay2.wxml' />
+<import src="../../template/showModal/showModal.wxml" />
+<view>
+  <view class='gsdbc'>
+      <view class='goodsShell'>
+        <block wx:key="{{index}}" wx:for="{{goodsList}}">
+          <template is="gsds2" data="{{...item, ...{index: index, type: 'bStep', needStep: 1000} }}"/>
+        </block>
+        <view class='clear'></view>
+      </view>
+      <template is="goodsModal" wx:if="{{goodsModal}}" data="{{...goodsInfo, ...{totalStep: step.totalStep, type: 'modal1'} }}" />
+    </view>
+</view>

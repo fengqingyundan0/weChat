@@ -1,0 +1,67 @@
+/* pages/prize/prize.wxss */
+@import '../../template/goodsDisplay2/goodsDisplay2.wxss';
+
+.prize{
+  background-color: #F3F3F3;
+}
+
+.topImg{
+  vertical-align: middle;
+  height: 683rpx;
+}
+
+.gift{
+  height: 0;
+  position: relative;
+  top: -520rpx;
+  text-align:center;
+}
+
+.giftAnimation{
+  width:175rpx;
+  height:193rpx;
+}
+
+.prize2{
+  position: relative;
+  top:-260rpx;
+  height:0;
+}
+
+.button-radius{
+  width: 460rpx;
+  height: 80rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  color: white;
+  margin: 20rpx 145rpx;
+  box-shadow: 0 0 30rpx 5rpx #D2D2D2;
+  line-height: 80rpx;
+  font-size: 38rpx
+}
+
+.prize2-1{
+  background-color: #FD7C76;
+}
+
+.prize2-2{
+  background-color: #19D6E0;
+}
+
+.prize2-2::after{ 
+  border: none; 
+}
+
+.note{
+  font-size: 25rpx;
+  color: #17C4CD;
+  text-align: center;
+  margin-bottom: 22rpx;
+}
+
+.goodsShell{
+  padding: 12rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

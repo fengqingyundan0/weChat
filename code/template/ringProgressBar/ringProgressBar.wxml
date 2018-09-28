@@ -1,0 +1,13 @@
+<!--template/ringProgressBar/ringProgressBar.wxml-->
+<template name="rpb">
+  <view class="circle">
+    <view class="pie_left" animation="{{animationDataLeft}}"><view class="left"></view></view>
+    <view class="pie_right" animation="{{animationDataRight}}"><view class="right"></view></view>
+    <view class="theValue"><span class="vauNum">{{value}}</span>%</view>
+  </view>
+    <view class="circle">
+    <view class="pie_left"><view class="left"></view></view>
+    <view class="pie_right"><view class="right"></view></view>
+    <view class="theValue"><span class="vauNum">20</span>%</view>
+  </view>
+</template>

@@ -1,0 +1,54 @@
+<!--pages/particul/partic.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style='height:520rpx;'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='partic'>
+  <text class='partic_A'> LA MER 精华面霜 100ml</text>
+  <view class='partic_B'>
+    <text class='partic_B1'>步数：8万步</text>
+    <text class='partic_B2'>兑换人数：9999人</text>
+  </view>
+</view>
+<view class='icons'>
+  <view class='icons_A'>
+    <text class='iconsA_a'>赞助商</text>
+    <text class='iconsA_b'>抢答冠军</text>
+    <image src='../../images/icon_x (1).png' class='iconsA_c'></image>
+    <image src='../../images/icon1.png' class='iconsA_d'></image>
+  </view>
+  <text class='icons_B'>“连胜五局抢红包！百万豪礼等你战”</text>
+</view>
+<view class='dao'>
+  <!--倒计时  {{countDownDay}}天-->
+  <view class="countDown" >
+    <view class="voteText countDownTimeText">砍步倒计时 {{countDownHour}} : {{countDownMinute}} : {{countDownSecond}}</view>
+  </view>
+  <view class='dao_a'>
+    <text class='daoA_a'><text class='daoA_b'>666666</text> 即可兑换</text>
+    <text class='daoB_a'>已砍 <text class='daoB_b'>5554285</text> 步</text>
+  </view>
+  <view style='width:80%;height:20rpx;margin:0 auto;'>
+    <progress percent="20" activeColor='#fc7674' backgroundColor='#fff' stroke-width="12" style='border-radius:16rpx;overflow:hidden;border:1px solid #fc7674'/>
+  </view>
+  <text class='dao_T'>兑换步数 = 商品实际步数 - 好友砍步步数</text>
+</view>
+<view class='chop'>
+  <image src='../../images/icon_x (3).png' class='chop_i1'></image>
+  <text class='chop_a'>砍步亲友团</text>
+  <image src='../../images/icon_x (4).png' class='chop_i2'></image>
+</view>  
+<view class='lie'>
+  <view class='lies'>
+    <image src='../../images/icon_x (2).png' class='lies_i'></image>
+    <text class='lies_n'>二狗子二狗子哈哈个哈咯</text>
+    <text class='lies_f'>帮您砍了<text class='lies_m'>88888888</text>步</text>
+  </view>
+</view>
+<view class='conversion'>
+  <text class='conversion_a'>马上兑换</text>
+  <text class='conversion_b'>邀请好友助力砍步</text>
+</view>

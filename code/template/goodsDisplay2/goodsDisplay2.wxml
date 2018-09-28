@@ -1,0 +1,21 @@
+<!--template/goodsDisplay2/goodsDisplay2.wxml-->
+<template name="gsds2">
+  <view class='gdsShell' bindtap='jin'>
+    <image class='gsdsImg' src="{{thum}}"></image>
+    <view class='gsdsTitle'>{{name}}</view>
+    <view class='gsdsSurplus'>剩余{{1}}件</view>
+    <!-- 使用步步币兑换 -->
+    <view wx:if='{{type == "bNum"}}'>
+      <view class='gsdsNeedStep'>
+        <image class='gsdsIcon1' src='../../images/my22.png'></image>{{needStep}}万步步币
+      </view>
+      <button bindtap='test' class='exchangeImg'>免费兑换</button>
+    </view>
+    <!-- 使用步数兑换 -->
+    <view wx:elif='{{type == "bStep"}}'>
+      <view class='gsdsNeedStep'>步数{{number >= 10000 ? (number/10000)+'万' : number}}步</view>
+      <view class='inline'></view>
+      <image data-hi="免费兑换" data-index="{{index}}" bindtap='goodsExchange' class='exchangeImg2' src='../../images/exchange.png'></image>
+    </view>
+  </view>
+</template>

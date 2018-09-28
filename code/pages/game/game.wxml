@@ -1,0 +1,117 @@
+<!--pages/game/game.wxml-->
+<import src="../../template/ringProgressBar/ringProgressBar.wxml" />
+<view class='game'>
+  <!-- 顶部背景图 -->
+  <image class='topBack' src='../../images/gameTopB.png'></image>
+  <!-- 奖金赛切换 -->
+  <view class='tapNavShell'>
+    <view class="tapNav">
+      <view wx:for="{{tabList}}" wx:key="{{index}}" class="{{tabArr.tabCurrentIndex==index?'active':''}}" data-index="{{index}}" bindtap="veHandle">{{item.text}}步</view>
+    </view>
+  </view>
+  <!-- 奖金赛信息 -->
+  <!-- 下一期 -->
+  <view class='gameItem thisPhase'>
+    <view>
+      <view class='gameItemNote'>报名中</view>
+      <view class='clear'></view>
+    </view>
+    <view class='game1Info'>
+      <view class="gameTitle">达标{{gameItem.text}}奖金总金额</view>
+      <view class='gamePhase'>{{gameItem.data[0].phase}}期</view>
+      <view class='clear'></view>
+    </view>
+    <view class='gameTotalAmount game1Info'>￥{{gameItem.data[0].totalAmount ? gameItem.data[0].totalAmount + ".00" : ''}}</view>
+    <view class='gameTotalPeople'>已有<text>{{gameItem.data[0].totalPeople}}</text>人报名参赛</view>
+    <view class='gameRules'>{{1}}元/期 满{{gameItem.text}}步分奖金</view>
+    <view>
+      <view class='countDown'>倒计时 {{'10:36:58'}}</view>
+      <view class='clear'></view>
+    </view>
+    <view>
+      <view class='enterFor' bindtap='enterFor' data-text='{{gameItem.text}}'>报名</view>
+      <view class='clear'></view>
+    </view>
+  </view>
+
+  <!-- <view class='game1'>
+    <view class="game1-1">
+      <view class='game1-1-1'>
+        <image class='game1-1Img' src="../../images/game1.png"></image>
+      </view>
+      <view class='game1-1-2'>3000步</view>
+    </view>
+    <view class='game1-2'>{{"20180728"}}期</view>
+  </view>
+
+  <view class='game2 gameItem'>
+    <view class='game2-1'>
+      <view class='dhBack'>
+        <image class='game2-1Img' src='../../images/game2.png'></image>
+        <canvas class="progress_canvas" canvas-id="canvasProgress"></canvas>
+      </view>
+      <view class='game2-1-2'>
+        <view class='game2-1-2_c'>
+          <image class='game2-1-2Icon' src='../../images/game3.png'></image>
+          <view class='game2-1-2Text'>还差2000步</view>
+        </view>
+      </view>
+      <view class='game2-1-3'>
+        <view class='game2-1-3_c'>
+          <image class='game2-1-3Img' src='../../images/game4.png'></image>
+          <view class='game2-1-3Text'>1000步</view>
+        </view>
+      </view>
+    </view>
+    <view class='game2-2'>
+      <view class='game2-2Text'>预计奖金</view>
+      <view class='game2-2Data gBottom'>3.05元</view>
+      <view class='game2-2Text'>预计收益率</view>
+      <view class='game2-2Data gBottom'>3.05%</view>
+      <view class='game2-2Text'>目前达标人数</view>
+      <view class='game2-2Data'>9982</view>
+    </view>
+  </view>
+
+  <view class='game3 gameItem'>
+    <view class='game3-1'>
+      <view class='yRadius'></view>
+      <view>20180729期3000步达标赛</view>
+    </view>
+    <view class='game3-2' bindtap='enroll'>报名</view>
+  </view> -->
+
+  <view wx:for="{{[1,2]}}" wx:key="{{index}}">
+    <view class='game4 gameItem'>
+      <view class='game3'>
+        <view class='game3-1'>
+          <view class='yRadius'></view>
+          <view>{{gameItem.data[item].phase}}期{{gameItem.text}}步达标赛</view>
+        </view>
+        <block>
+          <view wx:if="{{index === 0}}" class='game3-2 game4-1-2-lg'>进行中</view>
+          <view wx:elif="{{index === 1}}" class='game3-2 game4-1-2-aE'>已结束</view>
+        </block>
+      </view>
+      <view class='game4-2'>
+        <view class='game4-2-block borderB borderR'>
+          <view class='game4-2-1'>{{gameItem.data[item].totalPeople}}</view>
+          <view class='game4-2-2'>参与人数</view>
+        </view>
+        <view class='game4-2-block borderB'>
+          <view class='game4-2-1'>￥{{gameItem.data[item].totalAmount}}</view>
+          <view class='game4-2-2'>总奖励金</view>
+        </view>
+        <view class='game4-2-block borderR'>
+          <view class='game4-2-3'>{{gameItem.data[item].reachPeople}}</view>
+          <view class='game4-2-4'>已达标人数</view>
+        </view>
+        <view class='game4-2-block '>
+          <view class='game4-2-3'>{{gameItem.data[item].profit}}%</view>
+          <view class='game4-2-4'>预计收益率</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+</view>

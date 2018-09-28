@@ -1,0 +1,27 @@
+<view class='take'>
+  <text class='take_t'>姓名</text>
+  <input focus='true' confirm-hold='false'></input>
+</view>
+<view class='take'>
+  <text class='take_t'>收货人电话</text>
+  <input focus='true' confirm-hold='false' type='number'></input>
+</view>
+<view class="section">
+  <view class="section__title">省市区</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      {{region[0]}} — {{region[1]}} — {{region[2]}}
+    </view>
+  </picker>
+</view>
+<view class='take'>
+  <text class='take_t'>详细地址</text>
+  <input focus='true' confirm-hold='false'></input>
+</view>
+<view class='take_a'>
+  <text class='takea_t'>是否设置为默认地址</text>
+  <view class='takea_1'>
+    <switch type='switch' style='position: absolute;right:5%;margin-top:6rpx;'></switch>
+  </view>
+</view>
+<button class='take_b' hover-class='none'>确定</button>

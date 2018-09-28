@@ -1,0 +1,68 @@
+/* template/showModal/showModal.wxss */
+.goodsModal>.goodsModalShell{
+  width: 616rpx;
+  margin: 0 67rpx;
+  top: 3%;
+  font-size: 30rpx;
+  text-align: center;
+  font-weight:800;
+}
+
+.goodsModal>.goodsModalMask{
+  opacity: 0.8;
+}
+
+.goodsModal .goodsModalImg{
+  width: 436rpx;
+  height: 436rpx;
+  margin: 60rpx 90rpx 0;
+  vertical-align:middle;
+}
+
+.goodsModalTitle{
+  margin-top: 32rpx;
+  font-size: 32rpx;
+}
+
+.goodsStep{
+  color: #17C4CD;
+  margin: 12rpx 0 40rpx;
+}
+
+.goodsNote{
+  margin-bottom: 32rpx;
+}
+
+.shareFriendBtn{
+  width: 543rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+  color: #FFFFFF;
+  font-weight:400;
+  background: linear-gradient(to right, #19D6E0, #30DFC3);
+  margin-bottom: 44rpx;
+}
+
+.shareFriendBtn>image{
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align:middle;
+  margin-right:10rpx;
+  margin-bottom:5rpx;
+}
+
+.goodsNumIcon{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-bottom:5rpx;
+  margin-right:5rpx;
+}
+
+.goodsStep2{
+  color: #FD7D76;
+}
+
+.shareFriendBtn2{
+  background: linear-gradient(to right, #FD7C76, #FFA080);
+}

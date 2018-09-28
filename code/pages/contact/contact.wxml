@@ -1,0 +1,12 @@
+<view class='contact'>
+  <view class='contact_a' bindtap='phon'>
+    <image src='../../images/tel.png'></image>
+    <text class='contact_t'>电话客服</text>
+  </view>
+  <view class='contact_a'>
+    <button open-type='contact' hover-class='none' style='border:none;height:180rpx;'>
+      <image src='../../images/service.png' style='margin-left:6%;'></image>
+      <text class='contact_t'>在线客服</text>
+    </button>
+  </view>
+</view>

@@ -1,0 +1,97 @@
+/* pages/goodsDetails/index.wxss */
+
+.goodsDet>swiper{
+  width: 100%;
+  height: 800rpx;
+}
+
+.goodsDetImg{
+  width: 100%;
+  height: 100%;
+}
+
+.goodsDetTle{
+  /* font-family: webfont; */
+  
+  margin: 30rpx 40rpx;
+}
+
+.goodsDetNS{
+  border-bottom: 2rpx #000000 solid
+}
+
+.goodsDetNeed{
+  float: left;
+  margin:0 0 30rpx 30rpx;
+  color: #17C4CD;
+  font-weight: 600;
+}
+
+.goodsDetSur{
+  float: right;
+  margin:0 30rpx 30rpx 0;
+  color: #AFADAD;
+}
+
+.goodsDetIcon{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  margin-bottom: 10rpx;
+  margin-left: 20rpx;
+}
+
+.sponsor{
+  margin: 40rpx 30rpx;
+}
+
+.sponsorGoto{
+  float: right;
+}
+
+.slogan{
+  background-color: #FEF7E4;
+  padding: 40rpx 0;
+  border-top: 1rpx #AFADAD solid;
+  border-bottom: 1rpx #AFADAD solid;
+  text-align: center;
+}
+
+.tapNavShell{
+  margin: 0 50rpx;
+}
+
+.tapNav {
+ display: flex;
+ flex-direction: row;
+}
+.tapNav view{
+  flex:1;
+  width:200rpx;
+  height:100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+/*选中样式*/
+.tapNav .active {
+  color:#17C4CD;
+  border-bottom:4rpx solid #17C4CD;
+}
+
+#swiper{
+ margin:40rpx 0 120rpx;
+}
+
+#swiper .swiperItem{
+  color: red;
+  height: auto;
+}
+
+.freExeBtn{
+  background: linear-gradient(to right, #18D6E1, #30DFC3);
+  border-radius: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #FFFFFF;
+}

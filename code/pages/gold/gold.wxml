@@ -1,0 +1,24 @@
+<view>
+  <text class='gold_t'>2018-06-25 12：20：25</text>
+  <view class='gold_A'>
+    <view class='goldA_a'>
+      <text class='goldA_t1'>进行的时间</text>
+      <text class='goldA_t2'>+20金币</text>
+    </view>
+    <view class='goldA_a'>
+      <text class='goldA_t1'>进行的时间</text>
+      <text class='goldA_t2'>+20金币</text>
+    </view>
+  </view>
+  <text class='gold_t'>2018-06-25 12：20：25</text>
+  <view class='gold_A'>
+    <view class='goldA_a'>
+      <text class='goldA_t1'>进行的时间</text>
+      <text class='goldA_t2'>+20金币</text>
+    </view>
+    <view class='goldA_a'>
+      <text class='goldA_t1'>进行的时间</text>
+      <text class='goldA_t2'>+20金币</text>
+    </view>
+  </view>
+</view >

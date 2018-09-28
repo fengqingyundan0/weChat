@@ -1,0 +1,30 @@
+
+.Yq_1{
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.prob{
+  width: 90%;
+  height: 100rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.Yq_1:last-child{
+  border-bottom: none;
+}
+.prob_t1{
+  display: block;
+  width: 80%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  margin-left: 5%
+}
+.prob image{
+  width: 33rpx;
+  height: 33rpx;
+  margin-top: 33rpx;
+  margin-left: 9%;
+}

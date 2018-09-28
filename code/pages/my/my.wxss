@@ -1,0 +1,125 @@
+/* pages/my/my.wxss */
+page{
+  background-color: #f3f3f3;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  display: block;
+}
+
+.userinfo-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  margin: 6rpx;
+  border-radius: 50%;
+  vertical-align:middle;
+}
+
+.userinfo-nickname {
+  color: #17C4CD;
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+}
+
+.mybgdImg{
+  width: 100%;
+  height:398rpx;
+  vertical-align:middle;
+  opacity:0.8;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.my{
+  font-size:30rpx;
+  font-weight:bold;
+}
+
+.userInfo{
+  /* position: absolute; */
+  height: 308rpx;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+
+}
+
+.avatarShell{
+  border: 1rpx #17C4CD solid;
+  border-radius:50%;
+  margin: 55rpx 0 20rpx 0;
+}
+
+.myInfo{
+  display: flex;
+  width:650rpx;
+  margin: 54rpx;
+}
+
+.my2{
+  background-color: #f3f3f3;
+  padding-bottom: 20rpx;
+}
+
+.my2s{
+  width: 33.333333%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float:left;
+  padding:30rpx 0;
+}
+.my2s text{
+  font-size: 30rpx;
+}
+
+.my2Icon{
+  width: 47rpx;
+  height: 47rpx;
+  padding: 20rpx 0;
+}
+
+.my3s{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  border-bottom: 1rpx #DCDCDC solid;
+  background-color: #fff;
+}
+.my3s text{
+  font-size: 32rpx;
+}
+
+.my3Icon{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 32rpx 20rpx;
+}
+
+.my3s:active{
+  background-color: #DCDCDC;
+}
+
+.my3Icon2{
+  width: 33rpx;
+  height: 33rpx;
+  position: absolute;
+  right: 38rpx;
+}
+
+.myInfoData{
+  width: 33.333333%;
+}

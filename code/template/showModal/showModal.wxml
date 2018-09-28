@@ -1,0 +1,39 @@
+<!--template/showModal/showModal.wxml-->
+<template name="goodsModal">
+  <view class='goodsModal'>
+    <!--弹窗-->
+    <view class="modal-mask goodsModalMask" bindtap="showGoodsModal" catchtouchmove="catchTouchMove"></view>
+    <view class="modal-dialog goodsModalShell">
+      <image class='goodsModalImg' src="{{thum}}"></image>
+      <view class="goodsModalTitle">{{title}}</view>
+      <!-- 使用步数兑换 -->
+      <view wx:if="{{type == 'modal1'}}">
+        <view class='goodsStep'>步数：{{number >= 10000 ? (number/10000)+'万' : number}}步</view>
+        <view>我的总步数</view>
+        <view class='goodsStep'>{{totalStep}}步</view>
+        <view class='goodsNote'>您当前步数不够</view>
+        <button class='shareFriendBtn'>
+          <image src='../../images/shareIcon.png'></image>
+          <text>请好友凑步数</text>
+        </button>
+      </view>
+      <!-- 使用步步币兑换 -->
+      <view wx:elif="{{type == 'modal2'}}">
+        <view class='goodsStep goodsStep2'>
+          <image class='goodsNumIcon' src='../../images/my22.png'></image>
+          <text>{{'8万'}}步步币</text>
+        </view>
+        <view>我的步步币</view>
+        <view class='goodsStep goodsStep2'>
+          <image class='goodsNumIcon' src='../../images/my22.png'></image>
+          <text>{{'900'}}步步币</text>
+        </view>
+        <view class='goodsNote'>您当前步步币不够</view>
+        <button class='shareFriendBtn shareFriendBtn2'>
+          <image src='../../images/shareIcon.png'></image>
+          <text>凑步数集步步币</text>
+        </button>
+      </view>
+    </view>
+  </view>
+</template>

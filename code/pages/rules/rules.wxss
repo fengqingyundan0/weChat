@@ -1,0 +1,4 @@
+/* pages/rules/rules.wxss */
+.rules{
+  margin: 30rpx 20rpx;
+}

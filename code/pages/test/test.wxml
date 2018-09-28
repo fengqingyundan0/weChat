@@ -1,0 +1,28 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+<view>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='goodsShell'>
+    <block wx:key="{{index}}" wx:for="{{gsds}}" class='goods'>
+      <template is="gsds" data="{{...item}}"/>
+    </block>
+    <view class='clear'></view>
+  </view>
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <button bindtap='csRouter'>getCurrentPages</button>
+      </block>
+    </view>
+  </view>

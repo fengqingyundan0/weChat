@@ -1,0 +1,14 @@
+/* pages/strategy/strategy.wxss */
+.strategy{
+  font-size: 30rpx;
+}
+
+.strategyItem{
+  padding:70rpx 25rpx 0;
+}
+
+.strategyTitle{
+  font-size:40rpx;
+  font-weight:600;
+  padding-bottom:10rpx;
+}

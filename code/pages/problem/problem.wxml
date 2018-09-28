@@ -1,0 +1,15 @@
+<view>
+ <block  wx:key="{{index}}" wx:for="{{prob}}">
+    <view class='Yq_1' data-index='{{index}}' bindtap='xiang'>
+      <view class='prob'>
+        <text class='prob_t1'>{{item.name}}</text>
+        <image src='../../images/icon1.png'></image>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- <view>
+  <image></image>
+  <text>抢答冠军</text>
+  <image src='../../images/icon1.png'></image>
+</view> -->

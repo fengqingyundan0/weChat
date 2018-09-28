@@ -1,0 +1,48 @@
+<!--pages/goodsDetails/index.wxml-->
+<view>
+  <view class='goodsDet'>
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}" >
+      <block wx:for="{{goodsInfo.imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item.image}}" class="slide-image goodsDetImg"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='goodsDetTle web-font'>{{goodsInfo.title}}</view>
+    <view class='goodsDetNS'>
+      <view class='goodsDetNeed'>步数：{{goodsInfo.needStep >= 10000 ? (goodsInfo.needStep/10000)+'万' : goodsInfo.needStep}}步</view>
+      <view class='goodsDetSur'>剩余{{goodsInfo.surplus}}件</view>
+      <view class='clear'></view>
+    </view>
+  </view>
+  <view class='sponsor' bindtap='gotoSponsor'>
+    <text>赞助商</text>
+    <view class='sponsorGoto'>
+      <text>抢答冠军</text>
+      <image class='goodsDetIcon' src='../../images/icon1.png'></image>
+      <image class='goodsDetIcon' src='../../images/icon1.png'></image>
+    </view>
+  </view>
+  <view class='slogan'>连胜五局抢红包！百万豪礼等你战！！！</view>
+  <view class='tapNavShell'>
+    <view class="tapNav">
+      <view class="{{tabArr.tabCurrentIndex==0?'active':''}}" data-index="0" bindtap="veHandle">商品详情</view>
+      <view class="{{tabArr.tabCurrentIndex==1?'active':''}}" data-index="1" bindtap="veHandle">兑换记录</view>
+    </view>
+    <swiper id="swiper" current="{{current}}" bindchange="swiperChange" style="height:{{swiperHeight}}rpx">
+      <swiper-item class="swiperItem">
+        <view>商品详情图片</view>
+        <view>商品详情图片</view>
+        <view>商品详情图片</view>
+        <view>商品详情图片</view>
+        <view>商品详情图片</view>
+        <view>商品详情图片</view>
+        <view>商品详情图片</view>
+      </swiper-item>
+      <swiper-item class="swiperItem">
+        兑换记录信息
+      </swiper-item>
+    </swiper>
+  </view>
+  <button class='freExeBtn' bindtap='freExchange'>免费兑换</button>
+</view>

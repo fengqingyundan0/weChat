@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/gold/gold",
+    "pages/e/game",
+    "pages/take/take",
+    "pages/problem/problem",
+    "pages/contact/contact",
+    "pages/ready/ready",
+    "pages/my/my",
+    "pages/particul/partic",
+    "pages/goodsList/goodsList",
+    "pages/logs/logs",
+    "pages/prize/prize",
+    "pages/goodsDetails/index",
+    "pages/test/test",
+    "pages/rules/rules",
+    "pages/strategy/strategy",
+    "template/goodsDisplay2/goodsDisplay2",
+    "template/showModal/showModal",
+    "template/ringProgressBar/ringProgressBar"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#27DCCE",
+    "navigationBarTitleText": "bbjl",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#b2b2b2",
+    "selectedColor": "#17c4cd",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/shou.png",
+        "selectedIconPath": "./images/shou2.png"
+      },
+      {
+        "pagePath": "pages/goodsList/goodsList",
+        "text": "商品",
+        "iconPath": "./images/bc.png",
+        "selectedIconPath": "./images/bc2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/wo.png",
+        "selectedIconPath": "./images/wo3.png"
+      }
+      
+    ]
+  }
+}

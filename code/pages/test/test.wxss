@@ -1,0 +1,42 @@
+/* pages/test/test.wxss */
+
+.test1{
+  background:red;
+  height:300rpx;
+  width:300rpx;
+  margin-left: 225rpx;
+  margin-top: 200rpx;
+}
+
+.test2{
+  background:blue;
+  height:300rpx;
+  width:300rpx;
+  margin-left: 225rpx;
+  margin-top: 200rpx;
+}
+
+.stepShell1{
+  width: 354rpx;
+  height: 354rpx;
+  border: 1rpx solid #2EDEC6;
+  border-radius: 172rpx;
+  float: left;
+  position:relative;
+  top:20px;
+}
+
+.stepShell2{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 150rpx;
+  position:relative;
+  left: 27rpx;
+  top: 27rpx;
+  background: linear-gradient(#19D6E0,#2FDFC3);
+}
+
+.stepDatas{
+  width: 100%;
+  height: 100%;
+}

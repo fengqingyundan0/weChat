@@ -1,0 +1,9 @@
+/* pages/goodsList/goodsList.wxss */
+@import '../../template/goodsDisplay2/goodsDisplay2.wxss';
+@import '../../template/showModal/showModal.wxss';
+.goodsShell{
+  padding: 12rpx;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}

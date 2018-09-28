@@ -1,0 +1,352 @@
+/* pages/game/game.wxss */
+@import '../../template/ringProgressBar/ringProgressBar.wxss';
+
+.game{
+  background-color: #F3F3F3;
+}
+
+.topBack{
+  height: 308rpx;
+  vertical-align: middle;
+}
+
+.tapNavShell{
+  margin: 0 50rpx;
+}
+
+.tapNav {
+ display: flex;
+ flex-direction: row;
+}
+.tapNav view{
+  flex:1;
+  width:200rpx;
+  height:71rpx;
+  text-align: center;
+  line-height: 71rpx;
+  font-size: 36rpx;
+  color: #B9B9B9;
+}
+/*选中样式*/
+.tapNav .active {
+  color:#000000;
+  font-size: 50rpx;
+  font-weight: 600;
+  border-bottom:4rpx solid #2CDEC7;
+}
+
+.gameItem{
+  background-color: #FFFFFF;
+  margin-top: 30rpx;
+}
+
+.thisPhase{
+  padding-left: 74rpx;
+  padding-right: 43rpx;
+  margin:0;
+}
+
+.gameItemNote{
+  width: 143rpx;
+  height: 50rpx;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 50rpx;
+  background: linear-gradient(to right , #19D6E0, #30DFC3);
+  color: #FFFFFF;
+  float: right;
+  margin-bottom: 23rpx;
+}
+
+.game1Info{
+  font-weight:600;
+  margin-bottom: 54rpx;
+}
+
+.gameTitle{
+  font-size: 32rpx;
+  float: left;
+}
+
+.gamePhase{
+  font-size: 28rpx;
+  float: right;
+}
+
+.gameTotalAmount{
+  font-size: 110rpx;
+}
+
+.gameTotalPeople{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.gameTotalPeople>text{
+  color: #F75611;
+}
+
+.gameRules{
+  font-size: 26rpx;
+  color: #80807F;
+}
+
+.countDown{
+  font-size: 30rpx;
+  padding-right: 23rpx;
+  float: right;
+}
+
+.enterFor{
+  width: 280rpx;
+  height: 80rpx;
+  font-size: 38rpx;
+  border-radius: 40rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 80rpx;
+  background: linear-gradient(to right , #19D6E0, #30DFC3);
+  float: right;
+  margin-bottom: 10rpx;
+}
+
+.game3{
+  width: 100%;
+  height: 88rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size:38rpx; 
+  font-weight: 800;
+  margin-bottom: 32rpx;
+}
+
+.game3-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yRadius{
+  margin: 0 12rpx 0 4rpx;
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50%;
+  background-color: #FD7E76;
+}
+
+.game3-2{
+  width: 186rpx;
+  height: 100%;
+  line-height: 88rpx;
+  color: #FFFFFF;
+  text-align: center;
+  border-top-left-radius: 44rpx;
+  border-bottom-left-radius: 44rpx;
+}
+
+.game4-1-2-aE{
+  background: #AEAEAE;
+}
+
+.game4-1-2-lg{
+  background: linear-gradient(to right, #FD7D76, #FF9F80);
+}
+
+.game4-2{
+  margin: 0 35rpx 33rpx;
+  width: 680rpx;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.game4-2-block{
+  width: 339.5rpx;
+}
+
+.borderB{
+  border-bottom: 1rpx solid #D8D8D8;
+}
+
+.borderR{
+  border-right: 1rpx solid #D8D8D8;
+}
+
+.game4-2-1{
+  margin-top: 12rpx;
+  margin-bottom: 30rpx;
+  font-weight: 900;
+  font-size: 48rpx;
+}
+
+.game4-2-2{
+  margin-bottom: 42rpx;
+  font-size: 24rpx;
+}
+
+.game4-2-3{
+  margin-top: 42rpx;
+  margin-bottom: 31rpx;
+  font-weight: 900;
+  font-size: 48rpx;
+}
+
+.game4-2-4{
+  margin-bottom: 20rpx;
+  font-size: 24rpx;
+}
+
+/* .game1{
+  padding: 43rpx 34rpx 31rpx 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.game1-1{
+  font-size: 50rpx;
+  font-weight: 800;
+  text-align: center;
+}
+
+.game1-1-1{
+  height: 0;
+  position: relative;
+  z-index: 1;
+  top: 10rpx;
+}
+
+.game1-1-2{
+  position: relative;
+  z-index: 2;
+}
+
+.game1-1Img{
+  width: 227rpx;
+  height: 32rpx;
+  vertical-align: middle; 
+}
+
+.game1-2{
+  padding-top: 11rpx;
+  font-weight: 800;
+  color: #B3B3B3;
+}
+
+.game2{
+  padding: 30rpx 75rpx;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60rpx;
+  border-top: 1rpx solid #DADADA;
+  border-bottom: 1rpx solid #DADADA;
+}
+
+.game2-1{
+  margin-bottom: 42rpx;
+}
+
+.dhBack{
+  width: 369rpx;
+  height: 369rpx;
+  background-color: #C6C6C6;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.game2-1Img{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+}
+
+.progress_canvas{ 
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.game2-1-2{
+  height: 0;
+  position: relative;
+  left: 53.5rpx;
+  top: -54rpx;
+  z-index: 2;
+}
+
+.game2-1-2_c{
+  width: 260rpx;
+  height: 50rpx;
+  border: 1rpx solid #AFAFAF;
+  border-radius: 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.game2-1-2Icon{
+  width: 28rpx;
+  height: 30rpx;
+  padding: 0 15rpx;
+}
+
+.game2-1-2Text{
+  font-size: 28rpx;
+  font-weight: 800;
+}
+
+.game2-1-3{
+  width: 369rpx;
+  height:0;
+  position: relative;
+  z-index: 2;
+  top:-234rpx;
+}
+
+.game2-1-3_c{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game2-1-3Img{
+  width: 30rpx;
+  height: 50rpx;
+  margin-bottom: 49rpx;
+}
+
+.game2-1-3Text{
+  font-size: 34rpx;
+  font-weight: 800;
+  color: #FF8C00;
+}
+
+.game2-2{
+  margin-left: 58rpx;
+}
+
+.game2-2 .gBottom{
+  margin-bottom: 40rpx;
+}
+
+.game2-2Text{
+  font-size: 24rpx;
+  font-weight: 800;
+  margin-bottom: 17rpx;
+  color: #717171;
+}
+
+.game2-2Data{
+  font-size: 46rpx;
+  font-weight: 800;
+  color: #FF8C00;
+} */

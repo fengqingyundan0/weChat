@@ -1,0 +1,25 @@
+55
+
+s<!--pages/prize/prize.wxml-->
+<import src='../../template/goodsDisplay2/goodsDisplay2.wxml' />
+<view class='prize'>
+  <image class='topImg' src="../../images/bbcImg.png"></image>
+  <view class='gift'>
+    <image animation="{{giftAnimation}}" class='giftAnimation' src="../../images/gift2.png"></image>
+  </view>
+  <view class='prize2'>
+    <view class='button-radius prize2-1' bindtap='showModal'>5000步打开</view>
+    <view>
+      <button class='button-radius prize2-2' open-type="share">传递好运  再开一次</button>
+    </view>
+    <view class='note'>传递好运到群，可以免费再抽一次</view>
+  </view>
+  <view class='gsdbc'>
+    <view class='goodsShell'>
+      <block wx:key="{{index}}" wx:for="{{gsds}}">
+        <template is="gsds2" data="{{...item, ...{index:index, type: 'bNum'} }}"/>
+      </block>
+      <view class='clear'></view>
+    </view>
+  </view>
+</view>
